@@ -18,11 +18,9 @@ main(void)
   Json::Value my_json;
   Json::Value result;
 
-  my_json["team name"] = "My Team Name"; // replace this with your own team name
-  my_json["students"][0] = "123456789";  // student ID 1
-  my_json["students"][1] = "987654321";  // student ID 2
-  // my_json["students"][2] = "345678901";  // student ID 3, if needed
-
+  my_json["team name"] = "JUJU"; // replace this with your own team name
+  my_json["students"][0] = "920947104";  // student ID 1
+  
   try {
     result = myClient.register_team("register team", my_json);
     cout << result.toStyledString() << endl;
